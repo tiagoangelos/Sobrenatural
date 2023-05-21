@@ -1,6 +1,19 @@
 @charset "UTF-8";
 
 /*Responsividade Para Computador */
+header{
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+}
+
+#Header-Img{
+  background-image: url('../assets/img/header/img-header-pc.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
 #img-content-itens{
   max-width: 29%;
   max-height: 39%;
@@ -10,15 +23,22 @@
   max-width: 42%;
   max-height: 52%;
 }
+
 /*Responsividade Para Computador */
 
 /*VERSIONANDO PARA SMATHPHONE */
 @media(max-width: 930px){
   #Header-Img{
-    background-image: url('../assets/img/1af5d68fc2ad21b83c9099fb7f62173f.jpg');
+    background-image: url('../assets/img/header/img-header-phone.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #000;
+  }
+
+  header{
+    width: 100%;
+    height: 100%;
+    min-height: 10px;
   }
 
   #img-content-itens{
