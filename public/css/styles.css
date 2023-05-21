@@ -1,9 +1,16 @@
 @charset "UTF-8";
 
-/*VERSIONAR PARA PC */
+/*Responsividade Para Computador */
+#img-content-itens{
+  max-width: 29%;
+  max-height: 39%;
+}
 
-
-
+#img-content-itens-open{
+  max-width: 42%;
+  max-height: 52%;
+}
+/*Responsividade Para Computador */
 
 /*VERSIONANDO PARA SMATHPHONE */
 @media(max-width: 930px){
@@ -15,11 +22,17 @@
   }
 
   #img-content-itens{
-    max-width: 70%;
-    max-height: 60%;
+    max-width: 75%;
+    max-height: 65%;
+  }
+
+  #img-content-itens-open{
+    max-width: 62%;
+    max-height: 72%;
   }
 
 }
+/*VERSIONANDO PARA SMATHPHONE */
 
 
 :root {
