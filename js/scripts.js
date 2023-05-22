@@ -39,7 +39,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-/* Validation's Form */
 function ValidationName(){
     if(document.querySelector('#name').value.length >= 3){
         const Name = document.querySelector('#name');
