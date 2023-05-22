@@ -112,36 +112,25 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form action="https://api.staticforms.xyz/submit" method="post" id="form-action">
+                            <input type="hidden" name="accessKey" value="9b5df433-4562-420f-b4be-cb634a93d483">
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Digite Seu Nome..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" name="name" placeholder="Digite Seu Nome" autocomplete="off" onchange="ValidationName()" required/>
                                 <label for="name">Seu Nome</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">*O Nome é Obrigatório.</div>
+                                <div class="invalid-feedback-name" data-sb-feedback="name:required"></div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="nome@gmail.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" name="email" placeholder="Digite Seu Email" autocomplete="off" onchange="ValidationEmail()" required />
                                 <label for="email">Endereço De Email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">*O Email é Obrigatório.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">*O Email é Inválido.</div>
+                                <div class="invalid-feedback-email" data-sb-feedback="email:required"></div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(11) 983477-384" data-sb-validations="required" />
-                                <label for="phone">Numero De Telefone</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">*O Número é Obrigatório.</div>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Digite Sua Mensagem Aqui..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" style="height: 10rem" name="message" cols="30" rows="10" placeholder="Digite Sua Mensagem" onchange="ValidationText()" required></textarea>
                                 <label for="message">Digite Sua Mensagem</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">*A Mensagem é Obrigatória.</div>
+                                <div class="invalid-feedback-message" data-sb-feedback="message:required"></div>
                             </div>
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Mensagem Enviada Com Sucesso! :)</div>
-                                    <br />
-                                </div>
-                            </div>
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error Ao Enviar Mensagem!</div></div>
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit" onclick="SendForm()">Enviar</button>
+                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+                            <button type="submit" class="btn btn-primary btn-xl" id="submitButton">Enviar</button>
                         </form>
                     </div>
                 </div>
