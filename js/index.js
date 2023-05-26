@@ -38,3 +38,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function waitCoding(){
+    document.write('EM DESENVOLVIMENTO, AGUARDE.... :)');
+}

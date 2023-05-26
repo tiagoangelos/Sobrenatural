@@ -1,10 +1,10 @@
 function RedirectToPlaylistRock(){
-    const Link = "link do rock classico no google drive";
+    const Link = "https://drive.google.com/drive/folders/1u54V5LorfLOM7Zoq5iWpql6pdcQR33Li?usp=drive_link";
     window.open(Link, '_blank');
 }
 
 function RedirectToFolderInDrive(){
-    const Link = "link da pasta no google drive";
+    const Link = "https://drive.google.com/drive/folders/1OyfvPPpovrNqDNHSj8lKV-UqxUrZyoQR?usp=drive_link";
     window.open(Link, '_blank');
 }
 
