@@ -3,13 +3,18 @@ function RedirectToPlaylistRock(){
     window.open(Link, '_blank');
 }
 
+function RedirectToMediafire(){
+    const Link = "https://www.mediafire.com/file/hls5vfdaxqbmxsm/Rock_Cl%25C3%25A1ssico.rar/file";
+    window.open(Link, '_blank');
+}
+
 function RedirectToFolderInDrive(){
     const Link = "https://drive.google.com/drive/folders/1OyfvPPpovrNqDNHSj8lKV-UqxUrZyoQR?usp=drive_link";
     window.open(Link, '_blank');
 }
 
 function RedirectToInstagram(){
-    const Link = "https://instagram.com/winchester3341";
+    const Link = "https://instagram.com/winchester3341_";
     window.open(Link, '_blank');
 }
 
@@ -18,8 +23,8 @@ function RedirectToWikipediaDrive(){
     window.open(Link, '_blank');
 }
 
-function RedirectToWikipediaSupernatural(){
-    const Link = "https://pt.wikipedia.org/wiki/Supernatural_(s%C3%A9rie_de_televis%C3%A3o)";
+function RedirectToWikipediaMediafire(){
+    const Link = "https://pt.wikipedia.org/wiki/MediaFire";
     window.open(Link, '_blank');
 }
 
