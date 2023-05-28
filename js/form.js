@@ -1,5 +1,5 @@
 function ValidationName(){
-    if(document.querySelector('#name').value.length >= 3){
+    if(document.querySelector('#name').value.length >= 5){
         const Name = document.querySelector('#name');
         Name.style.color = 'black';
 
@@ -8,11 +8,11 @@ function ValidationName(){
         EnabledBtnSendForm();
     }else{
         const Name = document.querySelector('#name');
-        Name.style.color = 'red';
+        Name.style.color = '#960a0b';
 
         const MsgSpan = document.querySelector(".invalid-feedback-name");
-        MsgSpan.textContent = 'O Nome Deve Ter No Mínimo 3 Caractere!'
-        MsgSpan.style.color = 'red';
+        MsgSpan.textContent = 'O Nome Deve Ter No Mínimo 5 Caractere!'
+        MsgSpan.style.color = '#960a0b';
         DisabledBtnSendForm();
     }
 }
@@ -33,17 +33,17 @@ function ValidationEmail(){
         EnabledBtnSendForm();
     }else{
         const Email = document.querySelector("#email");
-        Email.style.color = 'red';
+        Email.style.color = '#960a0b';
 
         const MsgSpan = document.querySelector(".invalid-feedback-email");
-        MsgSpan.textContent = 'Formatos Válidos: @gmail.com, @hotmail.com!'
-        MsgSpan.style.color = 'red';
+        MsgSpan.textContent = 'Formatos Válidos: ex@gmail.com, ex@hotmail.com!'
+        MsgSpan.style.color = '#960a0b';
         DisabledBtnSendForm();
     }
 }
 
 function ValidationText(){
-    if(document.querySelector('#message').value.length >= 3){
+    if(document.querySelector('#message').value.length >= 5){
         const Message = document.querySelector('#message');
         Message.style.color = 'black';
 
@@ -52,11 +52,11 @@ function ValidationText(){
         EnabledBtnSendForm();
     }else{
         const Message = document.querySelector('#message');
-        Message.style.color = 'red';
+        Message.style.color = '#960a0b';
 
         const MsgSpan = document.querySelector(".invalid-feedback-message");
-        MsgSpan.textContent = 'A Mensagem Deve Ter No Minímo 3 Caractere!'
-        MsgSpan.style.color = 'red';
+        MsgSpan.textContent = 'A Mensagem Deve Ter No Minímo 5 Caractere!'
+        MsgSpan.style.color = '#960a0b';
         DisabledBtnSendForm();
     }
 }
