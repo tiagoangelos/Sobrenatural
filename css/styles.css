@@ -21,12 +21,12 @@ header{
   max-height: 52%;
 }
 
-#h2-thanks-coments, #h4-thanks-coments{
-  padding-bottom: 40px;
+#msgFormPrimary{
+  color: #1ABC9C;
 }
 
-#BtnHomeBack{
-  color: #ffffff;
+#msgFormSecundary{
+  color: #343a40;
 }
 
 /*Smartphone */
