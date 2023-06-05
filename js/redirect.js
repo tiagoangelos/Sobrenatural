@@ -14,7 +14,7 @@ function RedirectToFolderInDrive(){
 }
 
 function RedirectToInstagram(){
-    const Link = "https://instagram.com/winchester3341_";
+    const Link = "https://instagram.com/cw_supernatural";
     window.open(Link, '_blank');
 }
 
