@@ -7,7 +7,7 @@ body{
 
 header{
   background-image: url('../assets/img/header/img-header-pc.png');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -33,7 +33,7 @@ header{
 @media(max-width: 775px){
   header{
     background-image: url('../assets/img/header/img-header-phone.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
