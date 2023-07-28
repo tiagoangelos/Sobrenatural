@@ -13,8 +13,8 @@ function RedirectToFolderInDrive(){
     window.open(Link, '_blank');
 }
 
-function RedirectToInstagram(){
-    const Link = "https://instagram.com/cw_supernatural";
+function RedirectToWikipediaSupernatural(){
+    const Link = "https://pt.wikipedia.org/wiki/Supernatural_(s%C3%A9rie_de_televis%C3%A3o)";
     window.open(Link, '_blank');
 }
 
