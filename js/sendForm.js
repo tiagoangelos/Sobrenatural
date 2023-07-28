@@ -7,12 +7,14 @@ $('#form-action').on('submit', function(event) {
     const BtnSendForm = document.querySelector("#submitButton");
     const MsgSendPrimary = document.querySelector('#msgFormPrimary');
     const MsgSendSecundary = document.querySelector('#msgFormSecundary');
+    const loading = document.querySelector('#loading');
 
     Nome.disabled = true;
     Email.disabled = true;
     Message.disabled = true;
     BtnSendForm.disabled = true;
-    BtnSendForm.textContent = 'Enviando...'
+    BtnSendForm.style.display = 'none';
+    loading.style.display = 'flex';
 
     var data = {
         service_id: 'service_4xply48',
@@ -31,8 +33,8 @@ $('#form-action').on('submit', function(event) {
     data: JSON.stringify(data),
     contentType: 'application/json'
     }).done(function() {
-        BtnSendForm.textContent = 'Enviado!'
-        BtnSendForm.style.display = 'none'
+        BtnSendForm.style.display = 'none';
+        loading.style.display = 'none';
 
         MsgSendPrimary.style.color = '#1ABC9C';
         MsgSendPrimary.textContent = 'Obrigado Pelo Contato :)';
@@ -44,11 +46,13 @@ $('#form-action').on('submit', function(event) {
         Message.disabled = false;
         BtnSendForm.disabled = false;
         BtnSendForm.textContent = 'Enviar'
+
+        BtnSendForm.style.display = 'flex';
+        loading.style.display = 'none';
         
         MsgSendPrimary.style.color = '#960a0b';
         MsgSendPrimary.textContent = 'Algo Deu Errado :(';
         MsgSendSecundary.textContent = 'Tente Novamente!';
-        
     });
 
 })

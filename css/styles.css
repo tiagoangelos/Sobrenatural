@@ -29,6 +29,34 @@ header{
   color: #343a40;
 }
 
+/*Loading */
+#loading{
+  display: none;
+  background-color: transparent;
+}
+
+#spinner {
+  border: 8px solid #18a387;
+  border-left-color: rgb(198, 196, 196);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  animation: spinner 0.9s linear infinite;
+}
+
+@keyframes spinner{
+  to {transform: rotate(360deg);}
+}
+
+#loading #msg-spinner {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  padding-left: 10px;
+  color: #2c3e50;
+  font-size: larger;
+}
+
 /*Smartphone */
 @media(max-width: 775px){
   header{
@@ -52,8 +80,9 @@ header{
   }
 
 }
-/*Smartphone */
 
+
+/*BootStrap */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
