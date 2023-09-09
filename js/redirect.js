@@ -1,15 +1,5 @@
-function RedirectToPlaylistRock(){
-    const Link = "https://drive.google.com/drive/u/2/folders/1u54V5LorfLOM7Zoq5iWpql6pdcQR33Li";
-    window.open(Link, '_blank');
-}
-
-function RedirectToMediafire(){
-    const Link = "https://www.mediafire.com/file/ut9d327c5hp5up4/Rock_Cl%25C3%25A1ssico_-_Sobrenatural.netlify.app.rar/file";
-    window.open(Link, '_blank');
-}
-
-function RedirectToFolderInDrive(){
-    const Link = "https://drive.google.com/drive/folders/1OyfvPPpovrNqDNHSj8lKV-UqxUrZyoQR?usp=drive_link";
+function RedirectToDrive(){
+    const Link = "https://drive.google.com/u/1/uc?id=15J2jvl09QguCPmkacaePZ6E7PfHscioZ&export=download";
     window.open(Link, '_blank');
 }
 

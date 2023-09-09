@@ -17,9 +17,9 @@ $('#form-action').on('submit', function(event) {
     loading.style.display = 'flex';
 
     var data = {
-        service_id: 'service_4xply48',
-        template_id: 'template_ng2ty29',
-        user_id: 'kxcg6OYQr9njIZWhz',
+        service_id: 'service_uxf4vjw',
+        template_id: 'template_ur7ylqc',
+        user_id: 'sd3ULtNFFWLLDWPLI',
         
         template_params: {
             from_name: Nome.value,
